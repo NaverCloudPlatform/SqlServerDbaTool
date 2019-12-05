@@ -1,0 +1,51 @@
+﻿####### Sender.Type (No, A, B) => No : local, A : send custom, B : send ncp
+Plain:::Sender:::Type:::No
+
+####### if Sender.Type == A
+Plain:::Perfmon:::PerfmonWebApiCallEndPointUrl:::
+Plain:::Sqlmon:::SqlmonWebApiCallEndPointUrl:::
+
+Plain:::Backup:::ObjectStorageServiceUrl:::https://kr.object.ncloudstorage.com
+Plain:::Backup:::BucketName:::GroupName
+Plain:::ApiGateway:::Endpoint:::https://ncloud.apigw.ntruss.com
+
+####### Database Backup 2 ObjectStorage
+Plain:::Backup:::FullBackupIntervalSec:::0
+Plain:::Backup:::LogBackupIntervalSec:::0
+Plain:::Backup:::FullBackupHaCompleteCheckYN:::N
+Plain:::Backup:::Path:::c:\temp
+Plain:::Backup:::buffercount:::7
+Plain:::Backup:::maxtransfersize:::1048576
+Plain:::Backup:::compressionYN:::Y
+Plain:::Backup:::ObjectStorageBandWidthThrottleSleepMiliSec:::500
+Plain:::Backup:::PurgeLocalLimitSec:::60
+Plain:::Backup:::PurgeObjectLimitSec:::60
+Plain:::Ha:::HeartBeatIntervalSec:::0
+Plain:::Ha:::HeartBeatTimeLimitSec:::30
+Plain:::Ha:::ServerName:::
+Plain:::Repository:::DatabaseFilePath:::c:\temp\
+Plain:::Repository:::LogFilePath:::c:\temp\
+Plain:::Repository:::InitialCatalog:::LazyLog
+
+####### Perfmon.CounterLevel (1, 2) => 1 only cpu, 2 basic counter
+Plain:::Perfmon:::CounterLevel:::2
+Plain:::Perfmon:::SkipLoadCounter:::Y
+Plain:::Perfmon:::WebApiIntervalModValue:::1
+Plain:::Perfmon:::ProbeIntervalSec:::0
+Plain:::Perfmon:::TableSlideMin:::1
+Plain:::Perfmon:::CounterDataRemainTableCnt:::3
+Plain:::Sqlmon:::dm_exec_query_stats_ProbeIntervalSec:::0
+Plain:::Sqlmon:::dm_exec_query_stats_TableSlideMin:::1
+Plain:::Sqlmon:::dm_exec_query_stats_RemainTableCnt:::3
+Plain:::Sqlmon:::dm_exec_query_stats_WebApiIntervalModValue:::1
+Plain:::Sqlmon:::dm_os_workers_ProbeIntervalSec:::0
+Plain:::Sqlmon:::dm_os_workers_TableSlideMin:::1
+Plain:::Sqlmon:::dm_os_workers_RemainTableCnt:::3
+Plain:::Sqlmon:::dm_os_workers_WebApiIntervalModValue:::1
+Plain:::Sqlmon:::sp_lock2_ProbeIntervalSec:::0
+Plain:::Sqlmon:::sp_lock2_TableSlideMin:::1
+Plain:::Sqlmon:::sp_lock2_RemainTableCnt:::3
+Plain:::Sqlmon:::sp_lock2_WebApiIntervalModValue:::1
+Plain:::Sqlmon:::sp_readerrorlog_ProbeIntervalSec:::0
+Plain:::Sqlmon:::sp_readagentlog_ProbeIntervalSec:::0
+

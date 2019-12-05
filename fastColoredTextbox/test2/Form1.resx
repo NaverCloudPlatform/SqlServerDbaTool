@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="fastColoredTextBox1.ServiceColors" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdGYXN0Q29sb3JlZFRleHRCb3gsIFZlcnNpb249Mi4xNi4yNC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWZiOGFhMTJiOTk0ZWY2MWIMAwAAAFFTeXN0
+        ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+        PWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACJGYXN0Q29sb3JlZFRleHRCb3hOUy5TZXJ2aWNlQ29sb3JzBgAA
+        ACg8Q29sbGFwc2VNYXJrZXJGb3JlQ29sb3I+a19fQmFja2luZ0ZpZWxkKDxDb2xsYXBzZU1hcmtlckJh
+        Y2tDb2xvcj5rX19CYWNraW5nRmllbGQqPENvbGxhcHNlTWFya2VyQm9yZGVyQ29sb3I+a19fQmFja2lu
+        Z0ZpZWxkJjxFeHBhbmRNYXJrZXJGb3JlQ29sb3I+a19fQmFja2luZ0ZpZWxkJjxFeHBhbmRNYXJrZXJC
+        YWNrQ29sb3I+a19fQmFja2luZ0ZpZWxkKDxFeHBhbmRNYXJrZXJCb3JkZXJDb2xvcj5rX19CYWNraW5n
+        RmllbGQEBAQEBAQUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAA
+        ABRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAFFN5c3RlbS5E
+        cmF3aW5nLkNvbG9yAwAAABRTeXN0ZW0uRHJhd2luZy5Db2xvcgMAAAACAAAABfz///8UU3lzdGVtLkRy
+        YXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAA
+        AAAAlgABAAH7/////P///woAAAAAAAAAAKQAAQAB+v////z///8KAAAAAAAAAACWAAEAAfn////8////
+        CgAAAAAAAAAAjQABAAH4/////P///woAAAAAAAAAAKQAAQAB9/////z///8KAAAAAAAAAACWAAEACw==
+</value>
+  </data>
+  <data name="fastColoredTextBox1.Text" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using LogClient;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Text.RegularExpressions;
+
+namespace PowerShellExcuter
+{
+    public partial class Form1 : Form
+    {
+        static Log log = Log.Instance;
+        public Form1()
+        {
+            InitializeComponent();
+            textBoxEndPoint.Text = "http://10.250.17.95:7070";
+            textBoxAction.Text = "/LazyServer/LazyCommand/PostCmd";
+            textBoxPsCmd.Text = @"dir 'c:\Program Files\NBP\SQLServerLogCollector\log'";
+            textBoxAccessKey.Text = "1vC3VPgZ1X6e4nqSd0TK0";
+            textBoxSecretKey.Text = "PGgM0dXAGOXlavgKVbXeqTpzWBLlqqRSgYA701K60";
+            comboBoxCmd.SelectedItem = "POWERSHELL";
+            comboBoxPsCmdTemplate.SelectedItem = "OS DIR";
+            textBoxPsCmd.ScrollBars = ScrollBars.Both;
+            textBoxResponse.ScrollBars = ScrollBars.Both;
+        }
+
+        private void btnEncode_Click(object sender, EventArgs e)
+        {
+            Encode();
+        }
+
+        private void Encode()
+        {
+            byte[] bytes = Encoding.Unicode.GetBytes(textBoxPsCmd.Text);
+            string base64 = Convert.ToBase64String(bytes);
+            textBoxPsEncoded.Text = base64;
+        }
+
+        private void buttonDecode_Click(object sender, EventArgs e)
+        {
+            Decode();
+        }
+
+        private void Decode()
+        {
+            try
+            {
+                string s = textBoxPsEncoded.Text;
+                string plain = Encoding.Unicode.GetString(Convert.FromBase64String(s));
+                textBoxPsCmd.Text = plain;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonExecute_Click(object sender, EventArgs e)
+        {
+            textBoxResponse.Text = "Running.....";
+            Encode();
+            Execute();
+        }
+
+        private async void Execute()
+        {
+            JsonCmd json = new JsonCmd
+            {
+                cmd = comboBoxCmd.SelectedItem.ToString(),
+                cmdType = comboBoxCmdType.SelectedItem.ToString(),
+                cmdText = textBoxPsEncoded.Text
+            };
+            string responseString =string.Empty; 
+            try
+            {
+                string jsonCmd = JsonConvert.SerializeObject(json);
+                Task&lt;string&gt; response = new AsyncCall().WebApiCall(
+                    textBoxEndPoint.Text,
+                    GetPostType.POST,
+                    textBoxAction.Text,
+                    jsonCmd,
+                    textBoxAccessKey.Text,
+                    textBoxSecretKey.Text
+                    );
+                string temp = await response;
+                JToken jt = JToken.Parse(temp);
+                responseString = jt.ToString(Newtonsoft.Json.Formatting.Indented);
+            }
+            catch (Exception ex)
+            {
+                responseString = ex.Message; 
+            }
+            responseString = Regex.Replace(responseString, @"\\r\\n?|\\n", Environment.NewLine);
+            textBoxResponse.Text = Regex.Replace(responseString, @"\\\\", @"\");
+        }
+
+        private void cmd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxCmd.SelectedItem.ToString().ToUpper() != "POWERSHELL")
+            {
+                comboBoxCmdType.Items.Clear();
+                comboBoxCmdType.Items.Add("START");
+                comboBoxCmdType.Items.Add("STOP");
+                comboBoxCmdType.SelectedItem = "STOP";
+                textBoxPsCmd.Text = "";
+            }
+            else
+            {
+                comboBoxCmdType.Items.Clear();
+                comboBoxCmdType.Items.Add("OUT-STRING");
+                comboBoxCmdType.Items.Add("OBJECT");
+                comboBoxCmdType.SelectedItem = "OUT-STRING";
+                textBoxPsCmd.Text = @"dir 'c:\Program Files\NBP\SQLServerLogCollector\log'"; 
+            }
+        }
+
+        private void psCmdTemplate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS DIR")
+            {
+                textBoxPsEncoded.Text = "ZABpAHIAIAAnAGMAOgBcAFAAcgBvAGcAcgBhAG0AIABGAGkAbABlAHMAXABOAEIAUABcAFMAUQBMAFMAZQByAHYAZQByAEwAbwBnAEMAbwBsAGwAZQBjAHQAbwByAFwAbABvAGcAJwA=";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS PORTCHECK")
+            {
+                textBoxPsEncoded.Text = "IwBjAG0AZAAgAA0ACgAkAGkAcAAgAD0AIAAiADEAMAAuADIANQAwAC4ANwAuADcAMQAiAA0ACgAkAHAAbwByAHQAIAA9ACIAOQAwADEAMAAiAA0ACgANAAoADQAKACMAYwBtAGQAIAByAGUAcwB1AGwAdAAgAHAAYQB0AGgAIAANAAoAJABwAGEAdABoACAAPQAgACcAYwA6AFwAdABlAG0AcABcAHAAcwBjAG0AZABoAGkAcwB0AG8AcgB5ACcADQAKAE4AZQB3AC0ASQB0AGUAbQAgAC0ASQB0AGUAbQBUAHkAcABlACAAZABpAHIAZQBjAHQAbwByAHkAIAAtAFAAYQB0AGgAIAAkAHAAYQB0AGgAIAAtAEYAbwByAGMAZQAgAHwAIABvAHUAdAAtAG4AdQBsAGwAOwANAAoARwBlAHQALQBDAGgAaQBsAGQASQB0AGUAbQAgACQAcABhAHQAaAAgAHwAIABXAGgAZQByAGUAIAB7ACAAIQAgACQAXwAuAFAAUwBJAHMAQwBvAG4AdABhAGkAbgBlAHIAIAAtAGEAbgBkACAAKAAkAF8ALgBMAGEAcwB0AFcAcgBpAHQAZQBUAGkAbQBlACAALQBsAHQAIAAoAEcAZQB0AC0ARABhAHQAZQApAC4AQQBkAGQARABhAHkAcwAoAC0AMQA1ACkAKQB9ACAAfAAgAFIAZQBtAG8AdgBlAC0ASQB0AGUAbQAgAC0AUgBlAGMAdQByAHMAZQAgAC0ARQByAHIAbwByAEEAYwB0AGkAbwBuACAAUwBpAGwAZQBuAHQAbAB5AEMAbwBuAHQAaQBuAHUAZQAgAC0ARgBvAHIAYwBlACAADQAKAA0ACgAjAGMAbQBkACAAbwB1AHQAcAB1AHQADQAKACQAZgBpAGwAZQBuAGEAbQBlACAAPQAgACQAcABhAHQAaAArACcALwAnACsAKAAkACgAZwBlAHQALQBkAGEAdABlACAALQBmACAAeQB5AHkAeQBNAE0AZABkACkAIAArACAAJAAoAGcAZQB0AC0AZABhAHQAZQAgAC0AZgAgAEgASABtAG0AcwBzACkAKQANAAoADQAKAA0ACgAkAGEAZABkAHIAZQBzAHMAIAA9ACAAWwBTAHkAcwB0AGUAbQAuAE4AZQB0AC4ASQBQAEEAZABkAHIAZQBzAHMAXQA6ADoAUABhAHIAcwBlACgAJABpAHAAKQANAAoAJABzAG8AYwBrAGUAdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0AHMALgBUAEMAUABDAGwAaQBlAG4AdAANAAoAJABjAG8AbgBuAGUAYwB0ACAAPQAgACQAcwBvAGMAawBlAHQALgBCAGUAZwBpAG4AQwBvAG4AbgBlAGMAdAAoACQAYQBkAGQAcgBlAHMAcwAsACAAJABwAG8AcgB0ACwAIAAkAG4AdQBsAGwALAAgACQAbgB1AGwAbAApAA0ACgAkAHcAYQBpAHQAIAA9ACAAJABDAG8AbgBuAGUAYwB0AC4AQQBzAHkAbgBjAFcAYQBpAHQASABhAG4AZABsAGUALgBXAGEAaQB0AE8AbgBlACgANQAwADAAMAAsACAAJABmAGEAbABzAGUAKQANAAoAaQBmACgAJABzAG8AYwBrAGUAdAAuAEMAbwBuAG4AZQBjAHQAZQBkACAALQBlAHEAIAAkAHQAcgB1AGUAKQANAAoAewANAAoAJAByAGUAcwB1AGwAdAAgAD0AIAAiAHMAdQBjAGMAZQBzAHMAIgA7AA0ACgB9AA0ACgBlAGwAcwBlAA0ACgB7AA0ACgAkAHIAZQBzAHUAbAB0ACAAPQAgACIAZgBhAGwAcwBlACIADQAKAH0ADQAKACQAcgBlAHMAdQBsAHQAIAA+ACAAJABmAGkAbABlAG4AYQBtAGUADQAKAEcAZQB0AC0AQwBvAG4AdABlAG4AdAAgACQAZgBpAGwAZQBuAGEAbQBlAA0ACgA=";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS SERVICE")
+            {
+                textBoxPsEncoded.Text = "IwBHAGUAdAAtAFMAZQByAHYAaQBjAGUAIAAtAE4AYQBtAGUAIAAiAFMAUQBMAFMARQBSAFYARQBSAEEARwBFAE4AVAAiAA0ACgAjAFMAdABvAHAALQBTAGUAcgB2AGkAYwBlACAALQBOAGEAbQBlACAAIgBTAFEATABTAGUAcgB2AGUAcgBMAG8AZwBDAG8AbABsAGUAYwB0AG8AcgAiAA0ACgAjAFMAdABvAHAALQBTAGUAcgB2AGkAYwBlACAALQBOAGEAbQBlACAAIgBTAFEATABTAEUAUgBWAEUAUgBBAEcARQBOAFQAIgANAAoAIwBTAHQAYQByAHQALQBTAGUAcgB2AGkAYwBlACAALQBOAGEAbQBlACAAIgBTAFEATABTAEUAUgBWAEUAUgBBAEcARQBOAFQAIgANAAoA";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS ADDUSER")
+            {
+                textBoxPsEncoded.Text = "IwBhAGQAZAAgAGwAbwBjAGEAbAAgAGEAZABtAGkAbgAgAGEAYwBjAG8AdQBuAHQAIAANAAoADQAKACQAdQBzAGUAcgBpAGQAIAA9ACAAIgB1AHMAZQByAGkAZAAxACIAIAA7AA0ACgAkAHAAYQBzAHMAdwBvAHIAZAAgAD0AIAAiACEAMQBQAEAAcwBzAHcAMAByAGQAIQAhACEAIgAgADsAIAANAAoADQAKAG4AZQB0ACAAdQBzAGUAcgAgAC8AQQBEAEQAIAAkAHUAcwBlAHIAaQBkACAAJABwAGEAcwBzAHcAbwByAGQAIAAvAHkAIAAvAHAAYQBzAHMAdwBvAHIAZABjAGgAZwA6AG4AbwAgADsAIAANAAoAbgBlAHQAIABsAG8AYwBhAGwAZwByAG8AdQBwACAAYQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcgBzACAAJAB1AHMAZQByAGkAZAAgAC8AYQBkAGQAIAA7ACAADQAKACQAdQBzAGUAcgAgAD0AIABbAGEAZABzAGkAXQAiAFcAaQBuAE4AVAA6AC8ALwAkAGUAbgB2ADoAYwBvAG0AcAB1AHQAZQByAG4AYQBtAGUALwAkAHUAcwBlAHIAaQBkACIAIAA7ACAADQAKACQAdQBzAGUAcgAuAFUAcwBlAHIARgBsAGEAZwBzAC4AdgBhAGwAdQBlACAAPQAgACQAdQBzAGUAcgAuAFUAcwBlAHIARgBsAGEAZwBzAC4AdgBhAGwAdQBlACAALQBiAG8AcgAgADAAeAAxADAAMAAwADAAIAA7ACAADQAKACQAdQBzAGUAcgAuAEMAbwBtAG0AaQB0AEMAaABhAG4AZwBlAHMAKAApACAAOwANAAoA";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS USERANDGROUPKIST")
+            {
+                textBoxPsEncoded.Text = "IwBsAGkAcwB0ACAAdQBzAGUAcgAgAGEAbgBkACAAZwByAG8AdQBwACAADQAKAA0ACgAkAGEAZABzAGkAIAA9ACAAWwBBAEQAUwBJAF0AIgBXAGkAbgBOAFQAOgAvAC8AJABlAG4AdgA6AEMATwBNAFAAVQBUAEUAUgBOAEEATQBFACIADQAKACQAYQBkAHMAaQAuAEMAaABpAGwAZAByAGUAbgAgAHwAIAB3AGgAZQByAGUAIAB7ACQAXwAuAFMAYwBoAGUAbQBhAEMAbABhAHMAcwBOAGEAbQBlACAALQBlAHEAIAAnAHUAcwBlAHIAJwB9ACAAfAAgAEYAbwByAGUAYQBjAGgALQBPAGIAagBlAGMAdAAgAHsADQAKACAAIAAgACAAJABnAHIAbwB1AHAAcwAgAD0AIAAkAF8ALgBHAHIAbwB1AHAAcwAoACkAIAB8ACAARgBvAHIAZQBhAGMAaAAtAE8AYgBqAGUAYwB0ACAAewAkAF8ALgBHAGUAdABUAHkAcABlACgAKQAuAEkAbgB2AG8AawBlAE0AZQBtAGIAZQByACgAIgBOAGEAbQBlACIALAAgACcARwBlAHQAUAByAG8AcABlAHIAdAB5ACcALAAgACQAbgB1AGwAbAAsACAAJABfACwAIAAkAG4AdQBsAGwAKQB9AA0ACgAgACAAIAAgACQAXwAgAHwAIABTAGUAbABlAGMAdAAtAE8AYgBqAGUAYwB0ACAAQAB7AG4APQAnAFUAcwBlAHIATgBhAG0AZQAnADsAZQA9AHsAJABfAC4ATgBhAG0AZQB9AH0ALABAAHsAbgA9ACcARwByAG8AdQBwAHMAJwA7AGUAPQB7ACQAZwByAG8AdQBwAHMAIAAtAGoAbwBpAG4AIAAnADsAJwB9AH0ADQAKAH0A";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS UPLOAD")
+            {
+                textBoxPsEncoded.Text = "JABzAG8AdQByAGMAZQBmAG8AbABkAGUAcgAgAD0AIgBDADoAXABVAHMAZQByAHMAXAByAGQAcwBhAGQAbQBpAG4AXABEAG8AYwB1AG0AZQBuAHQAcwBcAFYAaQBzAHUAYQBsACAAUwB0AHUAZABpAG8AIAAyADAAMQA1AFwAUAByAG8AagBlAGMAdABzAFwATABhAHoAeQBsAG8AZwBMAG8AYwBhAGwAIgANAAoAJABzAG8AdQByAGMAZQBmAGkAbABlACAAPQAgACIAYgBhAHMAZQA2ADQAZwBlAG4ALgB6AGkAcAAiAA0ACgAkAGQAZQBzAHQAaQBuAGEAdABpAG8AbgBGAG8AbABkAGUAcgA9ACIAYQBwAHAALwAiAA0ACgAkAGYAdABwAGgAbwBzAHQAIAA9ACIAZgB0AHAAOgAvAC8AbQBpAG4AcwBvAHUAawAuAGEAcwB1AHMAYwBvAG0AbQAuAGMAbwBtACIADQAKACQAZgB0AHAAaQBkACAAPQAgACIAbQBpAG4AcwBvAHUAawAiAA0ACgAkAGYAdABwAHAAYQBzAHMAIAA9ACAAIgAhADEAUABAAHMAcwB3ADAAcgBkACIADQAKAA0ACgAkAGYAdABwACAAPQAgAFsAUwB5AHMAdABlAG0ALgBOAGUAdAAuAEYAdABwAFcAZQBiAFIAZQBxAHUAZQBzAHQAXQA6ADoAQwByAGUAYQB0AGUAKAAkAGYAdABwAGgAbwBzAHQAKwAiAC8AIgArACQAZABlAHMAdABpAG4AYQB0AGkAbwBuAEYAbwBsAGQAZQByACsAJABzAG8AdQByAGMAZQBmAGkAbABlACkADQAKACQAZgB0AHAAIAA9ACAAWwBTAHkAcwB0AGUAbQAuAE4AZQB0AC4ARgB0AHAAVwBlAGIAUgBlAHEAdQBlAHMAdABdACQAZgB0AHAADQAKACQAZgB0AHAALgBNAGUAdABoAG8AZAAgAD0AIABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBSAGUAcQB1AGUAcwB0AE0AZQB0AGgAbwBkAHMAKwBGAHQAcABdADoAOgBVAHAAbABvAGEAZABGAGkAbABlAA0ACgAkAGYAdABwAC4AQwByAGUAZABlAG4AdABpAGEAbABzACAAPQAgAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABTAHkAcwB0AGUAbQAuAE4AZQB0AC4ATgBlAHQAdwBvAHIAawBDAHIAZQBkAGUAbgB0AGkAYQBsACgAJABmAHQAcABpAGQALAAkAGYAdABwAHAAYQBzAHMAKQANAAoAJABmAHQAcAAuAFUAcwBlAEIAaQBuAGEAcgB5ACAAPQAgACQAdAByAHUAZQANAAoAJABmAHQAcAAuAFUAcwBlAFAAYQBzAHMAaQB2AGUAIAA9ACAAJAB0AHIAdQBlAA0ACgAjACAAcgBlAGEAZAAgAGkAbgAgAHQAaABlACAAZgBpAGwAZQAgAHQAbwAgAHUAcABsAG8AYQBkACAAYQBzACAAYQAgAGIAeQB0AGUAIABhAHIAcgBhAHkADQAKACQAYwBvAG4AdABlAG4AdAAgAD0AIABbAFMAeQBzAHQAZQBtAC4ASQBPAC4ARgBpAGwAZQBdADoAOgBSAGUAYQBkAEEAbABsAEIAeQB0AGUAcwAoACQAcwBvAHUAcgBjAGUAZgBvAGwAZABlAHIAKwAiAC8AIgArACQAcwBvAHUAcgBjAGUAZgBpAGwAZQApAA0ACgAkAGYAdABwAC4AQwBvAG4AdABlAG4AdABMAGUAbgBnAHQAaAAgAD0AIAAkAGMAbwBuAHQAZQBuAHQALgBMAGUAbgBnAHQAaAANAAoAIwAgAGcAZQB0ACAAdABoAGUAIAByAGUAcQB1AGUAcwB0ACAAcwB0AHIAZQBhAG0ALAAgAGEAbgBkACAAdwByAGkAdABlACAAdABoAGUAIABiAHkAdABlAHMAIABpAG4AdABvACAAaQB0AA0ACgAkAHIAcwAgAD0AIAAkAGYAdABwAC4ARwBlAHQAUgBlAHEAdQBlAHMAdABTAHQAcgBlAGEAbQAoACkADQAKACQAcgBzAC4AVwByAGkAdABlACgAJABjAG8AbgB0AGUAbgB0ACwAIAAwACwAIAAkAGMAbwBuAHQAZQBuAHQALgBMAGUAbgBnAHQAaAApAA0ACgAjACAAYgBlACAAcwB1AHIAZQAgAHQAbwAgAGMAbABlAGEAbgAgAHUAcAAgAGEAZgB0AGUAcgAgAG8AdQByAHMAZQBsAHYAZQBzAA0ACgAkAHIAcwAuAEMAbABvAHMAZQAoACkADQAKACQAcgBzAC4ARABpAHMAcABvAHMAZQAoACkA";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS DOWNLOAD")
+            {
+                textBoxPsEncoded.Text = "IwAgAEMAbwBuAGYAaQBnAA0ACgAkAFUAcwBlAHIAbgBhAG0AZQAgAD0AIAAiAG0AaQBuAHMAbwB1AGsAIgANAAoAJABQAGEAcwBzAHcAbwByAGQAIAA9ACAAIgAhADEAUABAAHMAcwB3ADAAcgBkACIADQAKACQATABvAGMAYQBsAEYAaQBsAGUAIAA9ACAAIgBDADoAXAB0AGUAbQBwAFwAUwBRAEwAUwBlAHIAdgBlAHIAMgAwADEANgBTAFAAMgAtAEsAQgA0ADAANQAyADkAMAA4AC0AeAA2ADQALQBFAE4AVQAuAGUAeABlACIADQAKACQAUgBlAG0AbwB0AGUARgBpAGwAZQAgAD0AIAAiAGYAdABwADoALwAvAG0AaQBuAHMAbwB1AGsALgBhAHMAdQBzAGMAbwBtAG0ALgBjAG8AbQAvAGEAcABwAC8AUwBRAEwAUwBlAHIAdgBlAHIAMgAwADEANgBTAFAAMgAtAEsAQgA0ADAANQAyADkAMAA4AC0AeAA2ADQALQBFAE4AVQAuAGUAeABlACIADQAKAA0ACgAjAGMAbQBkACAAcgBlAHMAdQBsAHQAIABwAGEAdABoACAAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACAAcwB0AGEAcgB0AA0ACgAkAHAAYQB0AGgAIAA9ACAAJwBjADoAXAB0AGUAbQBwAFwAcABzAGMAbQBkAGgAaQBzAHQAbwByAHkAJwANAAoATgBlAHcALQBJAHQAZQBtACAALQBJAHQAZQBtAFQAeQBwAGUAIABkAGkAcgBlAGMAdABvAHIAeQAgAC0AUABhAHQAaAAgACQAcABhAHQAaAAgAC0ARgBvAHIAYwBlACAAfAAgAG8AdQB0AC0AbgB1AGwAbAA7AA0ACgBHAGUAdAAtAEMAaABpAGwAZABJAHQAZQBtACAAJABwAGEAdABoACAAfAAgAFcAaABlAHIAZQAgAHsAIAAhACAAJABfAC4AUABTAEkAcwBDAG8AbgB0AGEAaQBuAGUAcgAgAC0AYQBuAGQAIAAoACQAXwAuAEwAYQBzAHQAVwByAGkAdABlAFQAaQBtAGUAIAAtAGwAdAAgACgARwBlAHQALQBEAGEAdABlACkALgBBAGQAZABEAGEAeQBzACgALQAxADUAKQApAH0AIAB8ACAAUgBlAG0AbwB2AGUALQBJAHQAZQBtACAALQBSAGUAYwB1AHIAcwBlACAALQBFAHIAcgBvAHIAQQBjAHQAaQBvAG4AIABTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACAALQBGAG8AcgBjAGUAIAANAAoAIwBjAG0AZAAgAHIAZQBzAHUAbAB0ACAAZgBpAGwAZQAgAA0ACgAkAGYAaQBsAGUAbgBhAG0AZQAgAD0AIAAkAHAAYQB0AGgAKwAnAFwAJwArACgAJAAoAGcAZQB0AC0AZABhAHQAZQAgAC0AZgAgAHkAeQB5AHkATQBNAGQAZAApACAAKwAgACQAKABnAGUAdAAtAGQAYQB0AGUAIAAtAGYAIABIAEgAbQBtAHMAcwApACkADQAKACQAaABhAHMARQByAHIAbwByACAAPQAgACQAZgBhAGwAcwBlADsAIAANAAoAIwBjAG0AZAAgAHIAZQBzAHUAbAB0ACAAcABhAHQAaAAgACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAjACMAIwAgAGUAbgBkAA0ACgANAAoAIwAgAEMAcgBlAGEAdABlACAAdABoAGUAIAB0AGEAcgBnAGUAdAAgAGYAaQBsAGUAIABvAG4AIAB0AGgAZQAgAGwAbwBjAGEAbAAgAHMAeQBzAHQAZQBtACAADQAKACQATABvAGMAYQBsAEYAaQBsAGUARgBpAGwAZQAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAASQBPAC4ARgBpAGwAZQBTAHQAcgBlAGEAbQAgACgAJABMAG8AYwBhAGwARgBpAGwAZQAsAFsASQBPAC4ARgBpAGwAZQBNAG8AZABlAF0AOgA6AEMAcgBlAGEAdABlACkADQAKAA0ACgB0AHIAeQANAAoAewANAAoAIAAgACAAIAAjACAAQwByAGUAYQB0AGUAIABhACAARgBUAFAAVwBlAGIAUgBlAHEAdQBlAHMAdAANAAoAIAAgACAAIAAkAEYAVABQAFIAZQBxAHUAZQBzAHQAIAA9ACAAWwBTAHkAcwB0AGUAbQAuAE4AZQB0AC4ARgB0AHAAVwBlAGIAUgBlAHEAdQBlAHMAdABdADoAOgBDAHIAZQBhAHQAZQAoACQAUgBlAG0AbwB0AGUARgBpAGwAZQApAA0ACgAgACAAIAAgACQARgBUAFAAUgBlAHEAdQBlAHMAdAAuAEMAcgBlAGQAZQBuAHQAaQBhAGwAcwAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAE4AZQB0AHcAbwByAGsAQwByAGUAZABlAG4AdABpAGEAbAAoACQAVQBzAGUAcgBuAGEAbQBlACwAJABQAGEAcwBzAHcAbwByAGQAKQANAAoAIAAgACAAIAAkAEYAVABQAFIAZQBxAHUAZQBzAHQALgBNAGUAdABoAG8AZAAgAD0AIABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBSAGUAcQB1AGUAcwB0AE0AZQB0AGgAbwBkAHMAKwBGAHQAcABdADoAOgBEAG8AdwBuAGwAbwBhAGQARgBpAGwAZQANAAoAIAAgACAAIAAkAEYAVABQAFIAZQBxAHUAZQBzAHQALgBVAHMAZQBCAGkAbgBhAHIAeQAgAD0AIAAkAHQAcgB1AGUADQAKACAAIAAgACAAJABGAFQAUABSAGUAcQB1AGUAcwB0AC4ASwBlAGUAcABBAGwAaQB2AGUAIAA9ACAAJABmAGEAbABzAGUADQAKACAAIAAgACAAIwAgAFMAZQBuAGQAIAB0AGgAZQAgAGYAdABwACAAcgBlAHEAdQBlAHMAdAANAAoAIAAgACAAIAAkAEYAVABQAFIAZQBzAHAAbwBuAHMAZQAgAD0AIAAkAEYAVABQAFIAZQBxAHUAZQBzAHQALgBHAGUAdABSAGUAcwBwAG8AbgBzAGUAKAApAA0ACgAgACAAIAAgACMAIABHAGUAdAAgAGEAIABkAG8AdwBuAGwAbwBhAGQAIABzAHQAcgBlAGEAbQAgAGYAcgBvAG0AIAB0AGgAZQAgAHMAZQByAHYAZQByACAAcgBlAHMAcABvAG4AcwBlAA0ACgAgACAAIAAgACQAUgBlAHMAcABvAG4AcwBlAFMAdAByAGUAYQBtACAAPQAgACQARgBUAFAAUgBlAHMAcABvAG4AcwBlAC4ARwBlAHQAUgBlAHMAcABvAG4AcwBlAFMAdAByAGUAYQBtACgAKQANAAoAIAAgACAAIAAjACAAdABoAGUAIABkAG8AdwBuAGwAbwBhAGQAIABiAHUAZgBmAGUAcgANAAoAIAAgACAAIABbAGIAeQB0AGUAWwBdAF0AJABSAGUAYQBkAEIAdQBmAGYAZQByACAAPQAgAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABiAHkAdABlAFsAXQAgADEAMAAyADQADQAKACAAIAAgACAAIwAgAEwAbwBvAHAAIAB0AGgAcgBvAHUAZwBoACAAdABoAGUAIABkAG8AdwBuAGwAbwBhAGQADQAKACAAIAAgACAAZABvACAAewANAAoAIAAgACAAIAAkAFIAZQBhAGQATABlAG4AZwB0AGgAIAA9ACAAJABSAGUAcwBwAG8AbgBzAGUAUwB0AHIAZQBhAG0ALgBSAGUAYQBkACgAJABSAGUAYQBkAEIAdQBmAGYAZQByACwAMAAsADEAMAAyADQAKQANAAoAIAAgACAAIAAkAEwAbwBjAGEAbABGAGkAbABlAEYAaQBsAGUALgBXAHIAaQB0AGUAKAAkAFIAZQBhAGQAQgB1AGYAZgBlAHIALAAwACwAJABSAGUAYQBkAEwAZQBuAGcAdABoACkADQAKACAAIAAgACAAfQANAAoAIAAgACAAIAB3AGgAaQBsAGUAIAAoACQAUgBlAGEAZABMAGUAbgBnAHQAaAAgAC0AbgBlACAAMAApAA0ACgB9AA0ACgBjAGEAdABjAGgAIAANAAoAewANAAoAIAAgACAAIAAkAF8ALgBFAHgAYwBlAHAAdABpAG8AbgAuAE0AZQBzAHMAYQBnAGUAIAA+ACAAJABmAGkAbABlAG4AYQBtAGUADQAKACAAIAAgACAAJABoAGEAcwBFAHIAcgBvAHIAIAA9ACAAJAB0AHIAdQBlAA0ACgB9AA0ACgBmAGkAbgBhAGwAbAB5ACAADQAKAHsADQAKACAAIAAgACAAJABMAG8AYwBhAGwARgBpAGwAZQBGAGkAbABlAC4AQwBsAG8AcwBlACgAKQANAAoAIAAgACAAIABpAGYAIAAoACQAaABhAHMARQByAHIAbwByACAALQBlAHEAIAAkAHQAcgB1AGUAKQANAAoAIAAgACAAIAB7AA0ACgAgACAAIAAgACAAIAAgACAARwBlAHQALQBDAG8AbgB0AGUAbgB0ACAAJABmAGkAbABlAG4AYQBtAGUADQAKACAAIAAgACAAfQANAAoAfQA=";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS CPUUSAGE")
+            {
+                textBoxPsEncoded.Text = "RwBlAHQALQBDAG8AdQBuAHQAZQByACAALQBDAG8AbQBwAHUAdABlAHIATgBhAG0AZQAgAGwAbwBjAGEAbABoAG8AcwB0ACAAJwBcAFAAcgBvAGMAZQBzAHMAKAAqACkAXAAlACAAUAByAG8AYwBlAHMAcwBvAHIAIABUAGkAbQBlACcAIABgAA0ACgAgACAAIAAgAHwAIABTAGUAbABlAGMAdAAtAE8AYgBqAGUAYwB0ACAALQBFAHgAcABhAG4AZABQAHIAbwBwAGUAcgB0AHkAIABjAG8AdQBuAHQAZQByAHMAYQBtAHAAbABlAHMAIABgAA0ACgAgACAAIAAgAHwAIABTAGUAbABlAGMAdAAtAE8AYgBqAGUAYwB0ACAALQBQAHIAbwBwAGUAcgB0AHkAIABpAG4AcwB0AGEAbgBjAGUAbgBhAG0AZQAsACAAYwBvAG8AawBlAGQAdgBhAGwAdQBlACAAYAANAAoAIAAgACAAIAB8ACAAUwBvAHIAdAAtAE8AYgBqAGUAYwB0ACAALQBQAHIAbwBwAGUAcgB0AHkAIABjAG8AbwBrAGUAZAB2AGEAbAB1AGUAIAAtAEQAZQBzAGMAZQBuAGQAaQBuAGcAIAB8ACAAUwBlAGwAZQBjAHQALQBPAGIAagBlAGMAdAAgAC0ARgBpAHIAcwB0ACAAMgAwACAAYAANAAoAIAAgACAAIAB8ACAAZgB0ACAASQBuAHMAdABhAG4AYwBlAE4AYQBtAGUALABAAHsATAA9ACcAQwBQAFUAJwA7AEUAPQB7ACgAJABfAC4AQwBvAG8AawBlAGQAdgBhAGwAdQBlAC8AMQAwADAAKQAuAHQAbwBTAHQAcgBpAG4AZwAoACcAUAAnACkAfQB9ACAALQBBAHUAdABvAFMAaQB6AGUA";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "OS GETPROCESS")
+            {
+                textBoxPsEncoded.Text = "IwBjAG0AZAAgAHIAZQBzAHUAbAB0ACAAcABhAHQAaAAgAA0ACgAkAHAAYQB0AGgAIAA9ACAAJwBjADoAXAB0AGUAbQBwAFwAcABzAGMAbQBkAGgAaQBzAHQAbwByAHkAJwANAAoATgBlAHcALQBJAHQAZQBtACAALQBJAHQAZQBtAFQAeQBwAGUAIABkAGkAcgBlAGMAdABvAHIAeQAgAC0AUABhAHQAaAAgACQAcABhAHQAaAAgAC0ARgBvAHIAYwBlACAAfAAgAG8AdQB0AC0AbgB1AGwAbAA7AA0ACgBHAGUAdAAtAEMAaABpAGwAZABJAHQAZQBtACAAJABwAGEAdABoACAAfAAgAFcAaABlAHIAZQAgAHsAIAAhACAAJABfAC4AUABTAEkAcwBDAG8AbgB0AGEAaQBuAGUAcgAgAC0AYQBuAGQAIAAoACQAXwAuAEwAYQBzAHQAVwByAGkAdABlAFQAaQBtAGUAIAAtAGwAdAAgACgARwBlAHQALQBEAGEAdABlACkALgBBAGQAZABEAGEAeQBzACgALQAxADUAKQApAH0AIAB8ACAAUgBlAG0AbwB2AGUALQBJAHQAZQBtACAALQBSAGUAYwB1AHIAcwBlACAALQBFAHIAcgBvAHIAQQBjAHQAaQBvAG4AIABTAGkAbABlAG4AdABsAHkAQwBvAG4AdABpAG4AdQBlACAALQBGAG8AcgBjAGUAIAANAAoADQAKACMAYwBtAGQAIAByAGUAcwB1AGwAdAAgAGYAaQBsAGUAIAANAAoAJABmAGkAbABlAG4AYQBtAGUAIAA9ACAAJABwAGEAdABoACsAJwAvACcAKwAoACQAKABnAGUAdAAtAGQAYQB0AGUAIAAtAGYAIAB5AHkAeQB5AE0ATQBkAGQAKQAgACsAIAAkACgAZwBlAHQALQBkAGEAdABlACAALQBmACAASABIAG0AbQBzAHMAKQApAA0ACgANAAoAIwBjAG0AZAAgAA0ACgBnAGUAdAAtAHAAcgBvAGMAZQBzAHMAIAA+ACAAJABmAGkAbABlAG4AYQBtAGUADQAKAEcAZQB0AC0AQwBvAG4AdABlAG4AdAAgACQAZgBpAGwAZQBuAGEAbQBlAA0ACgA=";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "SQL PATCH")
+            {
+                textBoxPsEncoded.Text = "YwA6AFwAdABlAG0AcABcAHMAcAAyAFwAcwBlAHQAdQBwAC4AZQB4AGUAIAAvAHEAdQBpAGUAdAAgAC8ASQBBAGMAYwBlAHAAdABTAFEATABTAGUAcgB2AGUAcgBMAGkAYwBlAG4AcwBlAFQAZQByAG0AcwAgAC8AQQBjAHQAaQBvAG4APQBQAGEAdABjAGgAIAAvAEkAbgBzAHQAYQBuAGMAZQBOAGEAbQBlAD0ATQBTAFMAUQBMAFMARQBSAFYARQBSAA==";
+            }
+            if (comboBoxPsCmdTemplate.SelectedItem.ToString().ToUpper() == "SQL VERSION")
+            {
+                textBoxPsEncoded.Text = "SQBuAHYAbwBrAGUALQBTAHEAbABjAG0AZAAgAC0AUQB1AGUAcgB5AFQAaQBtAGUAbwB1AHQAIAA4ADYANAAwADAAIAAtAEQAYQB0AGEAYgBhAHMAZQAgAEwAYQB6AHkATABvAGcAIAAtAFEAdQBlAHIAeQAgACIAcwBlAGwAZQBjAHQAIABAAEAAdgBlAHIAcwBpAG8AbgAgAHYAZQByAHMAaQBvAG4AIgA=";
+            }
+            
+            Decode();
+        }
+    }
+
+    public class JsonCmd
+    {
+        public string cmd { get; set; }
+        public string cmdType { get; set; }
+        public string cmdText { get; set; }
+    }
+}</value>
+  </data>
+</root>

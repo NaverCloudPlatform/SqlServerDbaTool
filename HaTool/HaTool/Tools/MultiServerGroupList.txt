@@ -1,0 +1,13 @@
+﻿
+# server 1
+test:::True:::t1:::106.10.57.148:::14333:::master
+test:::True:::t2:::101.101.164.149:::14333:::msdb
+test:::True:::t3:::10.39.13.75:::1433:::bdb
+test:::False:::t4:::110.39.13.77:::1433:::lazylog2
+
+# server 2
+test2:::True:::t5:::10.39.13.75:::1433:::master
+test2:::False:::t6:::10.39.13.75:::1433:::adb
+test2:::True:::t7:::10.39.13.75:::1433:::bdb
+
+# serverGroup

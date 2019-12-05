@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4281405-A128-4FE9-9DCB-A6A816FE50AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HaTool</RootNamespace>
+    <AssemblyName>SqlServerDbaTool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Img\___32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CsLib\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\FormConfigurationCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\FormConfigurationCheck.Designer.cs">
+      <DependentUpon>FormConfigurationCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\ContolHelpers.cs" />
+    <Compile Include="Global\FileDb.cs" />
+    <Compile Include="Config\FormInitScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\FormInitScript.Designer.cs">
+      <DependentUpon>FormInitScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\FormInitScriptVerify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\FormInitScriptVerify.Designer.cs">
+      <DependentUpon>FormInitScriptVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\FormLoginKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\FormLoginKey.Designer.cs">
+      <DependentUpon>FormLoginKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\FormObjectStorage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\FormObjectStorage.Designer.cs">
+      <DependentUpon>FormObjectStorage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\FormEncryptionKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config\FormEncryptionKey.Designer.cs">
+      <DependentUpon>FormEncryptionKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config\DataManager.cs" />
+    <Compile Include="HighAvailability\UcBackupPolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HighAvailability\UcBackupPolicy.Designer.cs">
+      <DependentUpon>UcBackupPolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighAvailability\UcFailoverPolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HighAvailability\UcFailoverPolicy.Designer.cs">
+      <DependentUpon>UcFailoverPolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighAvailability\UcMirroring.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HighAvailability\UcMirroring.Designer.cs">
+      <DependentUpon>UcMirroring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Models.cs" />
+    <Compile Include="Model\NCloud\Models.cs" />
+    <Compile Include="Model\ScriptArgs.cs" />
+    <Compile Include="Model\TBL_CLUSTER_KEY.cs" />
+    <Compile Include="Model\TBL_CLUSTER_SERVER_KEY.cs" />
+    <Compile Include="Model\TBL_CLUSTER_SERVER_VALUE.cs" />
+    <Compile Include="Model\TBL_CLUSTER_VALUE.cs" />
+    <Compile Include="Model\TBL_SERVER_KEY.cs" />
+    <Compile Include="Model\TBL_SERVER_VALUE.cs" />
+    <Compile Include="Monitoring\UcSqlmonPolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Monitoring\UcSqlmonPolicy.Designer.cs">
+      <DependentUpon>UcSqlmonPolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitoring\UcPerfmonPolicy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Monitoring\UcPerfmonPolicy.Designer.cs">
+      <DependentUpon>UcPerfmonPolicy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server\FormPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server\FormPreview.Designer.cs">
+      <DependentUpon>FormPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server\FormNcpRestPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server\FormNcpRestPreview.Designer.cs">
+      <DependentUpon>FormNcpRestPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server\ServerOperation.cs" />
+    <Compile Include="Server\UcCreateServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Server\UcCreateServer.Designer.cs">
+      <DependentUpon>UcCreateServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FormServerGroupModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\FormServerGroupModify.Designer.cs">
+      <DependentUpon>FormServerGroupModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\MainWorker.cs" />
+    <Compile Include="Tools\MultiServerKey.cs" />
+    <Compile Include="Tools\MultiServerValue.cs" />
+    <Compile Include="Tools\PoolWorker.cs" />
+    <Compile Include="Tools\TemplateManager.cs" />
+    <Compile Include="Tools\UcExecuterNcpApi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\UcExecuterNcpApi.Designer.cs">
+      <DependentUpon>UcExecuterNcpApi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\UcExecuterAgent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\UcExecuterAgent.Designer.cs">
+      <DependentUpon>UcExecuterAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\UcExecuterMultiSql.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\UcExecuterMultiSql.Designer.cs">
+      <DependentUpon>UcExecuterMultiSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\UcExecuterSql.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\UcExecuterSql.Designer.cs">
+      <DependentUpon>UcExecuterSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server\UcSetServerDisk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Server\UcSetServerDisk.Designer.cs">
+      <DependentUpon>UcSetServerDisk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighAvailability\UcLoadBalancer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HighAvailability\UcLoadBalancer.Designer.cs">
+      <DependentUpon>UcLoadBalancer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server\UcSetSqlServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Server\UcSetSqlServer.Designer.cs">
+      <DependentUpon>UcSetSqlServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server\UcSetAgentKey.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Server\UcSetAgentKey.Designer.cs">
+      <DependentUpon>UcSetAgentKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server\UcPublicIp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Server\UcPublicIp.Designer.cs">
+      <DependentUpon>UcPublicIp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\UcEncoderDecoder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\UcEncoderDecoder.Designer.cs">
+      <DependentUpon>UcEncoderDecoder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Config\FormInitScript.resx">
+      <DependentUpon>FormInitScript.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\FormInitScriptVerify.resx">
+      <DependentUpon>FormInitScriptVerify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\FormLoginKey.resx">
+      <DependentUpon>FormLoginKey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\FormConfigurationCheck.resx">
+      <DependentUpon>FormConfigurationCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\FormObjectStorage.resx">
+      <DependentUpon>FormObjectStorage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config\FormEncryptionKey.resx">
+      <DependentUpon>FormEncryptionKey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighAvailability\UcBackupPolicy.resx">
+      <DependentUpon>UcBackupPolicy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighAvailability\UcFailoverPolicy.resx">
+      <DependentUpon>UcFailoverPolicy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighAvailability\UcMirroring.resx">
+      <DependentUpon>UcMirroring.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitoring\UcSqlmonPolicy.resx">
+      <DependentUpon>UcSqlmonPolicy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitoring\UcPerfmonPolicy.resx">
+      <DependentUpon>UcPerfmonPolicy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Server\FormPreview.resx">
+      <DependentUpon>FormPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\FormNcpRestPreview.resx">
+      <DependentUpon>FormNcpRestPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\UcCreateServer.resx">
+      <DependentUpon>UcCreateServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FormServerGroupModify.resx">
+      <DependentUpon>FormServerGroupModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\UcExecuterNcpApi.resx">
+      <DependentUpon>UcExecuterNcpApi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\UcExecuterAgent.resx">
+      <DependentUpon>UcExecuterAgent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\UcExecuterMultiSql.resx">
+      <DependentUpon>UcExecuterMultiSql.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\UcExecuterSql.resx">
+      <DependentUpon>UcExecuterSql.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\UcSetServerDisk.resx">
+      <DependentUpon>UcSetServerDisk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighAvailability\UcLoadBalancer.resx">
+      <DependentUpon>UcLoadBalancer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\UcSetSqlServer.resx">
+      <DependentUpon>UcSetSqlServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\UcSetAgentKey.resx">
+      <DependentUpon>UcSetAgentKey.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\UcPublicIp.resx">
+      <DependentUpon>UcPublicIp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\UcEncoderDecoder.resx">
+      <DependentUpon>UcEncoderDecoder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Config\Upload\Lazylog64.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\DataManagerContentsInit.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\main.PNG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\___05x.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\___16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\___1x%2848%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\___200h.png" />
+    <Content Include="Img\___2x.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\___32.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\___500w.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\MultiServerGroupList.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\TemplatesNcpApi.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\TemplatesPs.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\TemplatesRest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\TemplatesSql.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tools\TemplatesSql2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Img\___32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CsLib\CsLib.csproj">
+      <Project>{7201ab9e-74f8-42ea-8d23-dceb652ef77d}</Project>
+      <Name>CsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fastColoredTextbox\FastColoredTextBox\FastColoredTextBox.csproj">
+      <Project>{6dd14a85-ccfc-4774-bd26-0f5772512319}</Project>
+      <Name>FastColoredTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LogClient\LogClient.csproj">
+      <Project>{7c90937f-7719-423c-b0db-449af5f5f135}</Project>
+      <Name>LogClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

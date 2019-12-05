@@ -1,0 +1,35 @@
+﻿#Local Remote Config.LogType == Local do not send log...
+Plain:::Config:::LogType:::Local
+Plain:::Config:::AppName:::Lazylog64
+
+####### Encryption GetSecureKey == Local => Encryption.LocalCryptionKey "1234" 
+####### Encryption GetSecureKey == NcpKms => request key ncpkms (KeyTag + Ciphertext)
+
+Plain:::Encryption:::LocalCryptionKey:::1234
+Plain:::Encryption:::GetCryptionKey:::Local
+Plain:::Encryption:::GetCryptionKeyUrl:::http://127.0.0.1:6060
+Base64Unicode:::Encryption:::KeyTag:::
+Base64Unicode:::Encryption:::Ciphertext:::
+Base64Unicode:::Api:::AccessKey:::
+Base64Unicode:::Api:::SecretKey:::
+
+Plain:::Repository:::SqlId:::
+Plain:::Repository:::SqlEncryptedPassword:::
+Plain:::Repository:::SqlDataSource:::
+Plain:::Repository:::SqlConnectTimeout:::5
+
+Plain:::Config:::LogUrl:::
+Plain:::Config:::LogQueueDelaySecond:::5
+Plain:::Config:::LogQueueDataCount:::50
+
+#IpType Enum list (SocketConnet, LocalFirstIp, LocalAllIp)
+Plain:::Config:::LogIpType:::LocalFirstIp
+Plain:::Config:::HealthRepoterIpType:::LocalAllIp
+
+######## http://127.0.0.1:6060/Api/HealthReport Post
+######## input json => {"AppName":"MSTool","Version":"1.0.0.0","ClientIp":"fe80::1c7a:71a6:aa0e:6cb3%12,10.250.17.95,10.250.17.237","Guid":"7b1de955-3c1f-4e6d-99dd-2e6efedfd9e8"}
+Plain:::HealthReport:::HealthReportUrl:::
+Plain:::HealthReport:::HealthReportIntervalSec:::0
+
+Plain:::WcfServer:::Port:::9090
+####### if WcfServer.Port != No WcfServer Auth need please set LogClient.Api.AccessKey & LogClient.Api.SecretKey
