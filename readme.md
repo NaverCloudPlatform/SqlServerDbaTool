@@ -67,7 +67,7 @@ SQL Server DBA Tool 은 설치형 서버에 사용자가 직접 명령을 내리
       3. Login Key Setting에서 초기 Administrator 계정 암호 확인을 위한 인증키 이름을 선택하거나 생성합니다. 로컬에 pem 파일을 저장해 두면, SQL Server DBA Tool 에서 Administrator 암호를 바로 확인 가능합니다 (Server > Create IP and Server Management > Get Password). 서버 Administrator 의 암호는 SQL Server DBA Tool > Server > Set Sql Server 항목에서 설치가 성공적으로 완료되지 않을때만 필요하며, 성공적으로 설정 된 경우, MSTSC 접근시 SQL Id, Password 로 접근 가능합니다. (자동으로 OS 계정 추가됨)
       4. Init Script에서 스크립트와 Agent 파일을 Upload하고 Verify 합니다. 
          ![](mdimg/img12.PNG)
-      5. Configuration Check 에서 SQL Server DBA 툴 설정을 체크 할 수 없습니다. **오류 발생시 다른 단계에서 오류가 발생 합니다.** 
+      5. Configuration Check 에서 SQL Server DBA 툴 설정을 체크 할 수 있습니다. **오류 발생시 다른 단계에서 오류가 발생 합니다.** (서버 생성전 체크해 아래와 같은 결과가 나오는지 확인 바랍니다.)
          ![](mdimg/img11.PNG)
       
    2. Server
