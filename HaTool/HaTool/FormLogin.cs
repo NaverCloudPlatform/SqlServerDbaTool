@@ -122,6 +122,10 @@ namespace HaTool
             {
                 MessageBox.Show(ex.Message);
             }
+            finally
+            {
+                buttonLogin.Enabled = true;
+            }
 
         }
     }
