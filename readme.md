@@ -50,7 +50,7 @@ SQL Server DBA Tool 은 설치형 서버에 사용자가 직접 명령을 내리
 ### 서버 생성 및 로드밸런서를 이용한 고가용 서버 그룹 설정 
 
 1. NCP 
-   1. NCP에 가입 후, 마이페이지 > 인증키 관리에서 키를 생성합니다. (SQL Server 에 접근하는 관리자 암호를 보호하기 위해 Local Key 대신 KMS를 사용할 경우 Sub Account 인증키가 필요합니다. )
+   1. NCP에 가입 후, 마이페이지 > 인증키 관리에서 키를 생성합니다. (SQL Server 에 접근하는 관리자 암호를 보호하기 위해 Local Key 대신 KMS를 사용할 경우 Sub Account 인증키가 필요하며, SQL Server DBA Tool 에 Sub Account 로 로그인 해야 합니다.)
       - [KMS 설정 도움말](./readme_kms.md)
    2. Console에서 ACG를 만든 후 이름을 확인 합니다. (Console > Server > ACG)
       - sql server : 14333 (변경가능), 5022 (변경 불가능)
