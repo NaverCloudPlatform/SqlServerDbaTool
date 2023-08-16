@@ -309,8 +309,8 @@ namespace HaTool.HighAvailability
                 tasks.Add(GetZoneList("1"));
                 tasks.Add(loadBalancerListLoad());
                 await Task.WhenAll(tasks);
-                comboBoxZone.Text = "KR-1";
-                comboBoxZone.Enabled = false;
+                //comboBoxZone.Text = "KR-1";
+                //comboBoxZone.Enabled = false;
             }
             catch(Exception ex)
             {
@@ -369,8 +369,8 @@ namespace HaTool.HighAvailability
                 throw;
             }
             comboBoxZone.SelectedIndex = 0;
-            if (regionNo == "1")
-                comboBoxZone.Text = "KR-1";
+            //if (regionNo == "1")
+            //    comboBoxZone.Text = "KR-1";
             //MessageBox.Show((comboBoxRegion.SelectedItem as region).regionCode);
         }
 
@@ -538,7 +538,7 @@ namespace HaTool.HighAvailability
                 parameters.Add(new KeyValuePair<string, string>("loadBalancerRuleList.1.serverPort", textBoxServerPort.Text.Trim()));
                 parameters.Add(new KeyValuePair<string, string>("regionNo", (comboBoxRegion.SelectedItem as region).regionNo));
                 parameters.Add(new KeyValuePair<string, string>("zoneNoList.1", (comboBoxZone.SelectedItem as zone).zoneNo));
-
+                //parameters.Add(new KeyValuePair<string, string>("zoneNoList.1", "3"));
                 SoaCall soaCall = new SoaCall();
                 var task = soaCall.WebApiCall(endpoint, RequestType.POST, action, parameters, LogClient.Config.Instance.GetValue(Category.Api, Key.AccessKey), LogClient.Config.Instance.GetValue(Category.Api, Key.SecretKey));
                 string response = await task;

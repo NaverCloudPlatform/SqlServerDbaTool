@@ -4,6 +4,8 @@ SQL Server DBA Tool 은 MSSQL 설치형 서버 2대를 이용해 자동 장애 �
 
 SQL Server DBA Tool 은 설치형 서버에 사용자가 직접 명령을 내리는것과 완전히 동일하며, 누구나 이러한 도구를 만들고 자동화 할 수 있습니다. 본 프로그램은 NCP 자동화 제어 예시 프로그램이며, NCP 콘솔, 윈도우, SQL Server 자동화 운영 방법을 보여줍니다. GPL V3 라이선스 아래 누구나 프로그램을 수정 및 배포 할 수 있습니다. 
 
+SQL Server DBA Tool 은 Korea Region "Classic" 환경의 SPSW0WINNTEN0050A (SQL 2019 on WIN2016) 이미지만 지원 합니다. 
+
 ## 주요기능
 
 1. 로드 밸런스를 이용한 자동 장애 복구 

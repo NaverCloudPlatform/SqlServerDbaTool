@@ -48,8 +48,10 @@ namespace HaTool.Server
                 List<Task> tasks = new List<Task>();
                 tasks.Add(GetRegionList());
                 tasks.Add(GetZoneList("1"));
-                tasks.Add(GetServerImageProductList("SPSW0WINNTEN0043A", "1"));
-                tasks.Add(GetServerProductList("SPSW0WINNTEN0043A", "1", "2"));
+                //tasks.Add(GetServerImageProductList("SPSW0WINNTEN0043A", "1"));
+                //tasks.Add(GetServerProductList("SPSW0WINNTEN0043A", "1", "2"));
+                tasks.Add(GetServerImageProductList("SPSW0WINNTEN0050A", "1"));
+                tasks.Add(GetServerProductList("SPSW0WINNTEN0050A", "1", "2"));
                 tasks.Add(GetAccessControlGroupList());
                 await Task.WhenAll(tasks);
             }
@@ -196,7 +198,13 @@ namespace HaTool.Server
                             }
                         }
                     }
-                    s.SelectedIndex = 0;
+                    if (s.Items.Count > 0)
+                        s.SelectedIndex = 0;
+                    else
+                    {
+                        s.Text = "not exists";
+                    }
+                        
                 });
 
             }
@@ -216,7 +224,8 @@ namespace HaTool.Server
                 List<KeyValuePair<string, string>> parameters = new List<KeyValuePair<string, string>>();
                 parameters.Add(new KeyValuePair<string, string>("responseFormatType", "json"));
                 parameters.Add(new KeyValuePair<string, string>("blockStorageSize", "100"));
-                parameters.Add(new KeyValuePair<string, string>("productCode", "SPSW0WINNTEN0043A"));
+                //parameters.Add(new KeyValuePair<string, string>("productCode", "SPSW0WINNTEN0043A")); // SPSW0WINNTEN0050A
+                parameters.Add(new KeyValuePair<string, string>("productCode", "SPSW0WINNTEN0050A")); // 
                 parameters.Add(new KeyValuePair<string, string>("regionNo", regionNo));
                 SoaCall soaCall = new SoaCall();
                 var task = soaCall.WebApiCall(endpoint, RequestType.POST, action, parameters, LogClient.Config.Instance.GetValue(Category.Api, Key.AccessKey), LogClient.Config.Instance.GetValue(Category.Api, Key.SecretKey));
@@ -274,7 +283,12 @@ namespace HaTool.Server
                             }
                         }
                     }
-                    s.SelectedIndex = 0;
+                    if (s.Items.Count > 0)
+                        s.SelectedIndex = 0;
+                    else
+                    {
+                        s.Text = "not exists";
+                    }
                 });
             }
             catch (Exception)
@@ -330,7 +344,12 @@ namespace HaTool.Server
                             }
                         }
                     }
-                    s.SelectedIndex = 0;
+                    if (s.Items.Count > 0)
+                        s.SelectedIndex = 0;
+                    else
+                    {
+                        s.Text = "not exists";
+                    }
                 });
             }
             catch (Exception)
@@ -397,7 +416,8 @@ namespace HaTool.Server
             string userDataFinal = dataManager.GetValue(DataManager.Category.InitScript, DataManager.Key.userDataFinal);
             if (userDataFinal.Trim().Length == 0)
                 throw new Exception("The startup script is not set. Please set InitScript in Config Tab.");
-
+            if (comboBoxServer.Text == "not exists")
+                throw new Exception("There is no corresponding server spec.");
             return true; 
         }
 
